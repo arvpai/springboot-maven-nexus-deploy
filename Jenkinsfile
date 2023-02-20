@@ -34,7 +34,7 @@ pipeline {
                     [
                         artifactId: 'springboot-maven-course-micro-svc',
                         classifier: '',
-                        file: "target/springboot-maven-course-micro-svc-${mavenPom.version}.war",
+                        file: "target/springboot-maven-course-micro-svc-${mavenPom.version}.jar",
                         type: 'jar'
                     ]
                 ],
