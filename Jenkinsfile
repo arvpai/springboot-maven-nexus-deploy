@@ -28,7 +28,7 @@ pipeline {
             steps{
                 script{
                     def mavenPom = readMavenPom file: 'pom.xml'
-                    def nexusRepoName = mavenPom.version.endsWith("SNAPSHOT") ? "springboot-maven-course-micro-svc-snapshot" : "springboot-maven-course-micro-svc-release"
+                    def nexusRepoName = mavenPom.version.endsWith("SNAPSHOT") ? "springboot-snapshot" : "springboot-release"
                 nexusArtifactUploader artifacts:
                 [
                     [
